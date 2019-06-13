@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Administrator
+Build-Jdk: 12.0.1
+Implementation-Title: docswave
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: ksmart31.docswave
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/docswave
+Created-By: Maven Integration for Eclipse
+

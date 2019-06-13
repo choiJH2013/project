@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html</td> charset=UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title>personnelInfo</title>
+<script>
+$(document).ready(function(){
+	
+	
+});
+</script>
+</head>
+<body>
+    <h1>인사 정보 설정</h1>
+
+	<h2>사용 인사 정보 설정</h2>
+	<div>인사 정보 중 추가적으로 설정하여 사용할 정보를 설정합니다.</div>
+    <!-- each -->
+    <form id="personnelInfoForm" action="" method="get">
+    	<input type="checkbox"> 성별
+    	<input type="checkbox"> 혼인여부
+    	<input type="checkbox"> 병역
+    	
+	<div>필수 입력 인사 정보 설정</div>
+	<div>인사 정보 중 필수적으로 입력해야 할 정보를 설정합니다.</div>
+    	<input type="checkbox"> 조직원 입사일 필수 입력
+    	<input type="checkbox"> 조직원 상태'퇴직'으로 변경 시, 퇴사일 필수 입력
+    	
+	<div>조직원 정보 노출 설정</div>
+	<div>인사 관리 메뉴 중에서 조직도 관리 및 조직원 정보 관리에서 퇴사자를 노출할 지 여부를 설정합니다.</div>
+	<input type="checkbox"> 퇴사자 노출 설정
+	<button id="personnelInfoBtn">저장</button>
+    </form>
+    
+    <h1>인사 기준 설정</h1>
+    
+	<div>근로 기준 설정</div>
+	<div>근로시간을 설정하여 휴가일수 등에 근로 기준으로 사용합니다.</div>
+	<div>주간 근무일: </div>
+	<form id="personnelStandardForm" >
+		<input type="checkbox">월요일
+		<input type="checkbox">화요일
+		<input type="checkbox">수요일
+		<input type="checkbox">목요일
+		<input type="checkbox">금요일
+		<input type="checkbox">토요일
+		<input type="checkbox">일요일
+		<div>1일 기준 근로 시간 : </div><input type="text">시간
+		<div>주당 근로 시간 : </div><input type="text">시간
+		<div>주당 연장 근로 시간 : </div><input type="text">시간
+		
+		<div>휴가 기준일 설정</div>
+		<div>휴가 기준일 설정에 따라서 휴가 조회 범위 및 자동 휴가부여 정책의 기본값이 변경됩니다.</div>
+		<input id="" type="radio" name="a" value="입사일" >입사일 기준 : 조직원의 입사일 기준으로 휴가를 부여하고 조회할 수 있습니다.
+		<input id="" type="radio" name="a" value="회계연도" >회계연도 기준 : 회계연도 기준으로 휴가를 관리할 경우, 1년차 조직원에게 부여되는 휴가는 추가 설정이 필요할 수 있습니다.
+		<div>회계연도 기준일 : </div>
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			월
+		</select>
+		<button id="personnelStandardBtn">저장</button>
+	</form>
+	
+	<!-- 직위/직책 -->
+	<h1>인사 항목 설정</h1>
+	<div>직위/직책 항목 설정</div>
+	<div>조직 내에서 사용하는 직위/직책을 자유롭게 입력하실 수 있습니다. 겸직인 경우 겸직인 직위/직책을 만드셔서 이용하실 수 있습니다.</div>
+	<div>(예) 관리 이사 및 팀장</div>	
+	<form id="memberPositionForm">
+		<input id="memberPositionText" type="text"><button id="memberPositionBtn">저장</button>
+		
+		
+	</form>
+	
+	
+</body>
+</html>

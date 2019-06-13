@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html</td> charset=UTF-8" />
+<title>department</title>
+</head>
+<body>
+    <h1>조직도/조직원 관리</h1>
+   
+    <!-- each -->
+    <table border="1">
+        <tr> 
+			<th>[맴버코드] memberCode</th>
+			<td>memberId</td>
+			<td>memberName</td>	
+			<td>memberEmployeeCode</td>
+			<td>departmentName</td>
+			<td>memberLevelTitle</td>
+			<td>memberJoinDay</td>
+			<td>memberStatusTitle</td>
+			<td>memberPositionName</td>
+			<td>memberWork</td>
+			<td>memberFormOfEmployment</td>
+			<td>memberPhone</td>
+			<td>memberMobile</td>
+			<td>memberAddress</td>
+			<td>memberBirth</td>
+			<td>memberDate</td>
+			<td>memberPw</td>
+        </tr>
+		<tr th:each="mlist : ${mlist}">
+			<td th:text="${mlist.memberCode}"></td>
+			<td th:text="${mlist.memberId}"></td>
+			<td th:text="${mlist.memberName}"></td>
+			<td th:text="${mlist.memberEmployeeCode}"></td>
+			<td th:text="${mlist.departmentName}"></td>
+			<td th:text="${mlist.memberLevelTitle}"></td>
+			<td th:text="${mlist.memberJoinDay}"></td>
+			<td th:text="${mlist.memberStatusTitle}"></td>
+			<td th:text="${mlist.memberPositionName}"></td>
+			<td th:text="${mlist.memberWork}"></td>
+			<td th:text="${mlist.memberFormOfEmployment}"></td>
+			<td th:text="${mlist.memberPhone}"></td>
+			<td th:text="${mlist.memberMobile}"></td>
+			<td th:text="${mlist.memberAddress}"></td>
+			<td th:text="${mlist.memberBirth}"></td>
+			<td th:text="${mlist.memberDate}"></td>
+			<td th:text="${mlist.memberPw}"></td>
+		</tr>
+    </table>
+</body>
+</html>
